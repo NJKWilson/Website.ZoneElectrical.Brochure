@@ -2,7 +2,7 @@
 
 export default function Hero() {
     return (
-        <main className="lg:relative">
+        <main className="lg:relative bg-gray-50">
             <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
               <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
                 <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">

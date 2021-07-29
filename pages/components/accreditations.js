@@ -7,9 +7,11 @@ import {
     ServerIcon,
     ShieldCheckIcon,
   } from '@heroicons/react/outline'
+
+  import Link from 'next/link'
   
   const features = [
-    { name: 'ISO 9001', logo: "images/accreditations/ISO_9001_URS.png", alt: "ISO9001 Logo", blurb: "ISO 9001 sets out the criteria for a quality management system." },
+    { name: 'ISO 9001', logo: "images/accreditations/ISO_9001_URS.png", alt: "ISO9001 Logo", blurb: "ISO 9001 sets out the criteria for a quality management system.", link: "/accreditations/iso9001" },
     { name: 'ISO 14001', logo: "images/accreditations/ISO_14001_URS.png", alt: "ISO14001 Logo", blurb: "ISO 14001 sets out the criteria for an environmental management system." },
     { name: 'ISO 45001', logo: "images/accreditations/ISO_45001_URS.png", alt: "Iso45001 Logo", blurb: "ISO 45001 sets out the criteria for an occupational health and safety (OH&S) management system." },
     { name: 'NICEIC Approved', logo: "images/accreditations/niceic.png", alt: "NICEIC Logo", blurb: "NICEIC provides assessment and certification services for contractors working across the building services sectors." },
@@ -43,9 +45,11 @@ import {
                       <p className="mt-5 text-base text-gray-500">
                         {feature.blurb}
                       </p>
-                      <p className="mt-5 text-base text-gray-500 text-right">
-                        Read More
-                      </p>
+                      <div className="mt-5 text-base text-blue-500 text-right">
+                        <a href={feature.link}>
+                          Read More
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
