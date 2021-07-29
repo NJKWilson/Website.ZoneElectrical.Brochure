@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'Zone': {
+        'zone': {
           DEFAULT: '#9ED522',
           '50': '#F3FAE2',
           '100': '#EAF7CC',
