@@ -12,8 +12,8 @@ import {
     { name: 'ISO 9001', logo: "images/accreditations/ISO_9001_URS.png", alt: "ISO9001 Logo", blurb: "ISO 9001 sets out the criteria for a quality management system." },
     { name: 'ISO 14001', logo: "images/accreditations/ISO_14001_URS.png", alt: "ISO14001 Logo", blurb: "ISO 14001 sets out the criteria for an environmental management system." },
     { name: 'ISO 45001', logo: "images/accreditations/ISO_45001_URS.png", alt: "Iso45001 Logo", blurb: "ISO 45001 sets out the criteria for an occupational health and safety (OH&S) management system." },
-    { name: 'NICEIC Approved', logo: "images/accreditations/niceic.png", alt: "NICEIC Logo", blurb: "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis." },
-    { name: 'UVDB Approved', logo: "images/accreditations/achilles.png", alt: "Achilles UVDB Logo", blurb: "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis." },
+    { name: 'NICEIC Approved', logo: "images/accreditations/niceic.png", alt: "NICEIC Logo", blurb: "NICEIC provides assessment and certification services for contractors working across the building services sectors." },
+    { name: 'UVDB Approved', logo: "images/accreditations/achilles.png", alt: "Achilles UVDB Logo", blurb: "UVDB is the utility industry pre-qualification system used across the UK." },
     { name: 'Compex Approved', logo: "images/accreditations/compex.png", alt: "Compex Logo", blurb: "CompEx is the international scheme for competency validation and certification of personnel who work in explosive atmospheres." },
   ]
   
@@ -32,7 +32,7 @@ import {
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {features.map((feature) => (
                 <div key={feature.name} className="pt-6">
-                  <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                  <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-80">
                     <div className="-mt-6">
                       <div>
                         <span className="inline-flex items-center justify-center p-3 white rounded-md shadow-lg">
