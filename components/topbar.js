@@ -101,7 +101,7 @@ export default function TopBar() {
                   <span className="sr-only">Workflow</span>
                   <img
                     className="h-8 w-auto sm:h-10"
-                    src="images/branding/zone.png"
+                    src="/images/branding/zone.png"
                     alt=""
                   />
                 </a>
