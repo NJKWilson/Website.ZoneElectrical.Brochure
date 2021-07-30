@@ -98,7 +98,7 @@ export default function TopBar() {
             <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
               <div>
                 <a href="\" className="flex">
-                  <span className="sr-only">Workflow</span>
+                  <span className="sr-only">Zone Electrical</span>
                   <img
                     className="h-8 w-auto sm:h-10"
                     src="/images/branding/zone.png"
