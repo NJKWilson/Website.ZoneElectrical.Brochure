@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <div>
       <Hero></Hero>
+      <OurServices></OurServices>
       <Accreditations></Accreditations>
       <Stats></Stats>
       <OurCustomers></OurCustomers>
-      <OurServices></OurServices>
     </div>
   )
 }
