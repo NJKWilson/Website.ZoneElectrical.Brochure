@@ -2,7 +2,7 @@
 
 export default function Hero() {
   return (
-    <div className="-mt-24" aria-labelledby="cause-heading">
+    <div className="-mt-24 z-0" aria-labelledby="cause-heading">
       <div className="relative h-2/3 bg-gray-800 py-32 px-6 sm:py-40 sm:px-12 lg:px-16">
         <div className="absolute inset-0 overflow-hidden">
           <img
