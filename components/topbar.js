@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useEffect } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
   BookmarkAltIcon,
@@ -84,36 +84,39 @@ const blogPosts = [
   },
 ]
 
-let opacityVar = "bg-opacity-0"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-
-
 export default function TopBar() {
-  useEffect(()=>{
-    const scroll = (event) => {
-      
-      if (window.scrollY < 10) {
-        opacityVar = "bg-opacity-100"
-        console.log(window.scrollY)
+
+  const [scrolling, setScrolling] = useState("bg-opacity-0");
+  const [scrolledDown, setScrolledDown] = useState(true);
+
+  useEffect(() => {
+    function onScroll() {
+      let currentPosition = window.pageYOffset; // or use document.documentElement.scrollTop;
+      if (currentPosition > 100) {
+        // downscroll code
+        setScrolling("transition-bg-opacity duration-1000 ease-out bg-opacity-100");
+        setScrolledDown(true)
       } else {
-        opacityVar = "bg-opacity-0"
-        this.set
+        // upscroll code
+        setScrolling("transition-bg-opacity duration-1000 ease-out bg-opacity-0");
+        setScrolledDown(false)
       }
     }
-    window.addEventListener("scroll", scroll, false);
-    return  () => window.removeEventListener("scroll", scroll, false);
-  },[])
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrolledDown]);
   
   return (
-    <Popover className="sticky z-10 top-0 bg-white ">
+    <Popover className={`sticky z-10 top-0 bg-white ${scrolling}`}>
       {({ open }) => (
         <>
           <div className="absolute inset-0 shadow z-30 pointer-events-none" aria-hidden="true" />
-          <div className={`relative z-20 ${opacityVar}`}>
+          <div className={`relative z-20 bg-opacity-0`}>
             <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
               <div>
                 <a href="\" className="flex">
@@ -138,14 +141,14 @@ export default function TopBar() {
                       <>
                         <Popover.Button
                           className={classNames(
-                            open ? 'text-gray-900' : 'text-white',
-                            'group bg-white bg-opacity-0 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                            open ? 'text-gray-500' : 'text-zone-600',
+                            'group bg-white bg-opacity-0 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900'
                           )}
                         >
                           <span>Services</span>
                           <ChevronDownIcon
                             className={classNames(
-                              open ? 'text-gray-600' : 'text-white',
+                              open ? 'text-gray-600' : 'text-zone-600',
                               'ml-2 h-5 w-5 group-hover:text-gray-500'
                             )}
                             aria-hidden="true"
@@ -212,10 +215,10 @@ export default function TopBar() {
                       </>
                     )}
                   </Popover>
-                  <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  <a href="#" className="text-base font-medium text-zone-600 hover:text-gray-900">
                     Pricing
                   </a>
-                  <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  <a href="#" className="text-base font-medium text-zone-600 hover:text-gray-900">
                     Docs
                   </a>
                   <Popover>
@@ -223,14 +226,14 @@ export default function TopBar() {
                       <>
                         <Popover.Button
                           className={classNames(
-                            open ? 'text-gray-900' : 'text-gray-500',
+                            open ? 'text-gray-900' : 'text-zone-600',
                             'group bg-white bg-opacity-0 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                           )}
                         >
                           <span>More</span>
                           <ChevronDownIcon
                             className={classNames(
-                              open ? 'text-gray-600' : 'text-gray-400',
+                              open ? 'text-gray-600' : 'text-zone-600',
                               'ml-2 h-5 w-5 group-hover:text-gray-500'
                             )}
                             aria-hidden="true"
