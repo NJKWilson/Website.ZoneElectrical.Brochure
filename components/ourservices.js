@@ -42,9 +42,7 @@ export default function OurServices() {
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-extrabold text-gray-900">Specialist Electrical Services</h2>
           <p className="mt-4 text-lg text-gray-500">
-          We provide Electrical design & build services to a wide range of sectors, including the oil & gas, chemical, water, pharmaceutical, steel, process manufacturing industries throughout the UK.
-Our electrical services range from design, specification, procurement, installation, inspection and testing, commissioning, maintenance and on-going support
-
+            We provide Electrical design & build services to a wide range of sectors, including the oil & gas, chemical, water, pharmaceutical, steel, process manufacturing industries throughout the UK. Our electrical services range from design, specification, procurement, installation, inspection and testing, commissioning, maintenance and on-going support
           </p>
         </div>
         <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
