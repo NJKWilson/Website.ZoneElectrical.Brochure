@@ -27,8 +27,8 @@ import {
           <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
             The importance of accreditation
           </p>
-          <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-            Accreditations help ensure that we meet the standards required to carry out our work safely, to the highest quality possible while meeting all legal requirements   
+          <p className="mt-5 max-w-5xl mx-auto text-xl text-gray-500">
+            Accreditations help ensure that we meet the standards required to carry out our work safely, to the highest quality possible while meeting all legal requirements. We have been Assessed and Certified by the NICEIC (National Inspection Council for Electrical Installation Contractors) as having the technical capability to carry out electrical installation services
           </p>
           <div className="mt-12">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">

@@ -13,7 +13,6 @@ export default function Home() {
       <Hero></Hero>
       <OurServices></OurServices>
       <Accreditations></Accreditations>
-      <Stats></Stats>
       <OurCustomers></OurCustomers>
     </div>
   )
