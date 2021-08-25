@@ -1,28 +1,28 @@
 /* This example requires Tailwind CSS v2.0+ */
 const navigation = {
     solutions: [
-      { name: 'Marketing', href: '#' },
-      { name: 'Analytics', href: '#' },
-      { name: 'Commerce', href: '#' },
-      { name: 'Insights', href: '#' },
+      // { name: 'Marketing', href: '#' },
+      // { name: 'Analytics', href: '#' },
+      // { name: 'Commerce', href: '#' },
+      // { name: 'Insights', href: '#' },
     ],
     support: [
-      { name: 'Pricing', href: '#' },
-      { name: 'Documentation', href: '#' },
-      { name: 'Guides', href: '#' },
-      { name: 'API Status', href: '#' },
+      // { name: 'Pricing', href: '#' },
+      // { name: 'Documentation', href: '#' },
+      // { name: 'Guides', href: '#' },
+      // { name: 'API Status', href: '#' },
     ],
     company: [
-      { name: 'About', href: '#' },
-      { name: 'Blog', href: '#' },
-      { name: 'Jobs', href: '#' },
-      { name: 'Press', href: '#' },
-      { name: 'Partners', href: '#' },
+      // { name: 'About', href: '#' },
+      // { name: 'Blog', href: '#' },
+      // { name: 'Jobs', href: '#' },
+      // { name: 'Press', href: '#' },
+      // { name: 'Partners', href: '#' },
     ],
     legal: [
-      { name: 'Claim', href: '#' },
-      { name: 'Privacy', href: '#' },
-      { name: 'Terms', href: '#' },
+      // { name: 'Claim', href: '#' },
+      // { name: 'Privacy', href: '#' },
+      // { name: 'Terms', href: '#' },
     ],
     social: [
       {
@@ -96,7 +96,7 @@ const navigation = {
           Footer
         </h2>
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-          <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+          {/* <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="grid grid-cols-2 gap-8 xl:col-span-2">
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
@@ -181,7 +181,7 @@ const navigation = {
                 </div>
               </form>
             </div>
-          </div>
+          </div> */}
           <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
             <div className="flex space-x-6 md:order-2">
               {navigation.social.map((item) => (
@@ -192,7 +192,7 @@ const navigation = {
               ))}
             </div>
             <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-              &copy; 2020 Workflow, Inc. All rights reserved.
+              &copy; 2021 Zone Electrical, Inc. All rights reserved.
             </p>
           </div>
         </div>

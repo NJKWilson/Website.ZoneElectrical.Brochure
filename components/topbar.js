@@ -48,22 +48,22 @@ const solutions = [
   },
 ]
 const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'View All Products', href: '#', icon: CheckCircleIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
+  // { name: 'Watch Demo', href: '#', icon: PlayIcon },
+  // { name: 'View All Products', href: '#', icon: CheckCircleIcon },
+  // { name: 'Contact Sales', href: '#', icon: PhoneIcon },
 ]
 const company = [
-  { name: 'About', href: '#', icon: InformationCircleIcon },
-  { name: 'Customers', href: '#', icon: OfficeBuildingIcon },
-  { name: 'Press', href: '#', icon: NewspaperIcon },
-  { name: 'Careers', href: '#', icon: BriefcaseIcon },
-  { name: 'Privacy', href: '#', icon: ShieldCheckIcon },
+  // { name: 'About', href: '#', icon: InformationCircleIcon },
+  // { name: 'Customers', href: '#', icon: OfficeBuildingIcon },
+  // { name: 'Press', href: '#', icon: NewspaperIcon },
+  // { name: 'Careers', href: '#', icon: BriefcaseIcon },
+  // { name: 'Privacy', href: '#', icon: ShieldCheckIcon },
 ]
 const resources = [
-  { name: 'Community', href: '#', icon: UserGroupIcon },
-  { name: 'Partners', href: '#', icon: GlobeAltIcon },
-  { name: 'Guides', href: '#', icon: BookmarkAltIcon },
-  { name: 'Webinars', href: '#', icon: DesktopComputerIcon },
+  // { name: 'Community', href: '#', icon: UserGroupIcon },
+  // { name: 'Partners', href: '#', icon: GlobeAltIcon },
+  // { name: 'Guides', href: '#', icon: BookmarkAltIcon },
+  // { name: 'Webinars', href: '#', icon: DesktopComputerIcon },
 ]
 const blogPosts = [
   {
@@ -136,7 +136,7 @@ export default function TopBar() {
               </div>
               <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
                 <Popover.Group as="nav" className="flex space-x-10">
-                  <Popover>
+                  {/* <Popover>
                     {({ open }) => (
                       <>
                         <Popover.Button
@@ -214,144 +214,20 @@ export default function TopBar() {
                         </Transition>
                       </>
                     )}
-                  </Popover>
+                  </Popover> */}
                   <a href="#" className="text-base font-medium text-zone-600 hover:text-gray-900">
-                    Pricing
+                    Link
                   </a>
                   <a href="#" className="text-base font-medium text-zone-600 hover:text-gray-900">
-                    Docs
+                    Case Studies
                   </a>
-                  <Popover>
-                    {({ open }) => (
-                      <>
-                        <Popover.Button
-                          className={classNames(
-                            open ? 'text-gray-900' : 'text-zone-600',
-                            'group bg-white bg-opacity-0 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
-                          )}
-                        >
-                          <span>More</span>
-                          <ChevronDownIcon
-                            className={classNames(
-                              open ? 'text-gray-600' : 'text-zone-600',
-                              'ml-2 h-5 w-5 group-hover:text-gray-500'
-                            )}
-                            aria-hidden="true"
-                          />
-                        </Popover.Button>
-
-                        <Transition
-                          show={open}
-                          as={Fragment}
-                          enter="transition ease-out duration-200"
-                          enterFrom="opacity-0 -translate-y-1"
-                          enterTo="opacity-100 translate-y-0"
-                          leave="transition ease-in duration-150"
-                          leaveFrom="opacity-100 translate-y-0"
-                          leaveTo="opacity-0 -translate-y-1"
-                        >
-                          <Popover.Panel
-                            static
-                            className="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg"
-                          >
-                            <div className="absolute inset-0 flex">
-                              <div className="bg-white w-1/2" />
-                              <div className="bg-gray-50 w-1/2" />
-                            </div>
-                            <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
-                              <nav className="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
-                                <div>
-                                  <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">Company</h3>
-                                  <ul className="mt-5 space-y-6">
-                                    {company.map((item) => (
-                                      <li key={item.name} className="flow-root">
-                                        <a
-                                          href={item.href}
-                                          className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
-                                        >
-                                          <item.icon
-                                            className="flex-shrink-0 h-6 w-6 text-gray-400"
-                                            aria-hidden="true"
-                                          />
-                                          <span className="ml-4">{item.name}</span>
-                                        </a>
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </div>
-                                <div>
-                                  <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
-                                    Resources
-                                  </h3>
-                                  <ul className="mt-5 space-y-6">
-                                    {resources.map((item) => (
-                                      <li key={item.name} className="flow-root">
-                                        <a
-                                          href={item.href}
-                                          className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
-                                        >
-                                          <item.icon
-                                            className="flex-shrink-0 h-6 w-6 text-gray-400"
-                                            aria-hidden="true"
-                                          />
-                                          <span className="ml-4">{item.name}</span>
-                                        </a>
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </div>
-                              </nav>
-                              <div className="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
-                                <div>
-                                  <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
-                                    From the blog
-                                  </h3>
-                                  <ul className="mt-6 space-y-6">
-                                    {blogPosts.map((post) => (
-                                      <li key={post.id} className="flow-root">
-                                        <a href={post.href} className="-m-3 p-3 flex rounded-lg hover:bg-gray-100">
-                                          <div className="hidden sm:block flex-shrink-0">
-                                            <img
-                                              className="w-32 h-20 object-cover rounded-md"
-                                              src={post.imageUrl}
-                                              alt=""
-                                            />
-                                          </div>
-                                          <div className="w-0 flex-1 sm:ml-8">
-                                            <h4 className="text-base font-medium text-gray-900 truncate">
-                                              {post.name}
-                                            </h4>
-                                            <p className="mt-1 text-sm text-gray-500">{post.preview}</p>
-                                          </div>
-                                        </a>
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </div>
-                                <div className="mt-6 text-sm font-medium">
-                                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                                    {' '}
-                                    View all posts <span aria-hidden="true">&rarr;</span>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                          </Popover.Panel>
-                        </Transition>
-                      </>
-                    )}
-                  </Popover>
+                  <a href="#" className="text-base font-medium text-zone-600 hover:text-gray-900">
+                    Contact Us
+                  </a>
                 </Popover.Group>
                 <div className="flex items-center md:ml-12">
-                  <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                    Sign in
-                  </a>
-                  <a
-                    href="#"
-                    className="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-                  >
-                    Sign up
-                  </a>
+                  <PhoneIcon className="flex-shrink-0 w-6 h-6 text-zone-600" aria-hidden="true" />
+                  <span className="ml-3 text-zone-600">(+44) 01685 377484</span>
                 </div>
               </div>
             </div>

@@ -17,15 +17,13 @@ export default function Hero() {
             Zone Electrical Ltd.
           </h2>
           <p className="mt-3 text-xl text-white">
-            We're committed to responsible, sustainable, and ethical manufacturing. Our small-scale approach allows
-            us to focus on quality and reduce our impact. We're doing our best to delay the inevitable heat-death of
-            the universe.
+            Based in Merthyr Tydfil, Zone provides an efficient service in electrical design, installations, maintenance and testing nationally.
           </p>
           <a
             href="#"
-            className="mt-8 w-full block bg-white border border-transparent rounded-md py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
+            className="mt-8 w-full block bg-zone-500 border border-transparent rounded-md py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
           >
-            Read our story
+            Contact Us
           </a>
         </div>
       </div>
