@@ -216,7 +216,7 @@ export default function TopBar() {
                     )}
                   </Popover> */}
                   <a href="#" className="text-base font-medium text-zone-600 hover:text-gray-900">
-                    Link
+                    Accreditations
                   </a>
                   <a href="#" className="text-base font-medium text-zone-600 hover:text-gray-900">
                     Case Studies

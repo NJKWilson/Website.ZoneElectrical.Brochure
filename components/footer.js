@@ -1,4 +1,25 @@
 /* This example requires Tailwind CSS v2.0+ */
+import {
+  BookmarkAltIcon,
+  BriefcaseIcon,
+  ChartBarIcon,
+  CheckCircleIcon,
+  CursorClickIcon,
+  DesktopComputerIcon,
+  GlobeAltIcon,
+  InformationCircleIcon,
+  MenuIcon,
+  NewspaperIcon,
+  OfficeBuildingIcon,
+  PhoneIcon,
+  PlayIcon,
+  ShieldCheckIcon,
+  UserGroupIcon,
+  ViewGridIcon,
+  XIcon,
+  AtSymbolIcon,
+} from '@heroicons/react/outline'
+
 const navigation = {
     solutions: [
       // { name: 'Marketing', href: '#' },
@@ -182,16 +203,25 @@ const navigation = {
               </form>
             </div>
           </div> */}
+          <div className="text-gray-400">
+            <p className="text-3xl">Zone Electrical Ltd.</p>
+            <p>Waterloo House</p>
+            <p>Penydarren</p>
+            <p>Merthyr Tydfil</p>
+            <p>CF47 0SX</p>
+            <p>ContactUs@ZoneElectrical.co.uk</p>
+            <p>01685 377484</p>
+          </div>
           <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
             <div className="flex space-x-6 md:order-2">
               {navigation.social.map((item) => (
-                <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-300">
+                <a key={item.name} href={item.href} className="text-zone-400 hover:text-zone-300">
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </a>
               ))}
             </div>
-            <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+            <p className="mt-8 text-base text-zone-400 md:mt-0 md:order-1">
               &copy; 2021 Zone Electrical, Inc. All rights reserved.
             </p>
           </div>
