@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# Old Folder
+/1Old
+
 # production
 /build
 

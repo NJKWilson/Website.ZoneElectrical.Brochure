@@ -1,5 +1,5 @@
-import TopBar from "./topbar";
-import Footer from "./footer";
+import TopBar from "../components/layout/topbar";
+import Footer from "../components/layout/footer";
 
 const Layout = ({ children }) => {
   return (
