@@ -1,7 +1,12 @@
 import TopBar from "../components/layout/topbar";
 import Footer from "../components/layout/footer";
 
-const Layout = ({ children }) => {
+type Props = {
+  preview?: boolean
+  children: React.ReactNode
+}
+
+const Layout = ({ children }: Props) => {
   return (
     <div className="content">
       <TopBar />
